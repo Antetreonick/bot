@@ -1,6 +1,6 @@
 const Client = require('mpp-client-net');
 
-const client = new Client.Client('wss://vps.8448.space:8443', 'd2a95848cdd14fb25f9062e1.58d5c4551d915eb941b0aa3c85b8b5278a242f58b6cc72be6fd3d5daef795616d0ac0f8ae91f6c796fdae93d3c11b9ce');
+const client = new Client.Client('wss://vps.8448.space:8443', process.env.token);
 
 client.start();
 client.setChannel('lobby');
